@@ -1,27 +1,42 @@
-# TabeelGuideClient
+# Tabeel Guide Client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+Client in which users can browse through a list of channels and see the its programming about shows and movies to stream.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This is what you need to install and run this project
 
-## Build
+```
+- NPM
+- Angular CLI
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Installing
 
-## Running unit tests
+To run for the first time this project follow the next steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+- Clone the repo.
+- Run the command npm install.
+- Run ng-serve --open
+```
 
-## Running end-to-end tests
+## Running the tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+For the moment thos project does not has automated tests.
 
-## Further help
+## Deployment
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run the project ng-build and go to the dist folder to get the compiled files.
+
+## Built With
+
+* Angular 6 javascript framework
+
+## Authors
+
+* **Benjamin Lewis**
