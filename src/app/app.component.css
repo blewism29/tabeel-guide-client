@@ -1,0 +1,25 @@
+/*
+ * @Author: Benjamin Lewis 
+ * @Date: 2018-09-08 22:14:41 
+ * @Last Modified by: Benjamin Lewis
+ * @Last Modified time: 2018-09-08 22:41:31
+ */
+
+.nav-section-divider {
+  padding: 0px 10px;
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+.nav-item > div {
+  
+}
+
+.nav-item > a {
+  border: 1px solid #FFFFFF;
+  padding: 5px 10px;
+
+  font-size: 16px
+}

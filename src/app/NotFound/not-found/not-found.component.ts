@@ -1,8 +1,8 @@
 /*
  * @Author: Benjamin Lewis 
- * @Date: 2018-09-08 22:14:49 
+ * @Date: 2018-09-09 20:35:03 
  * @Last Modified by: Benjamin Lewis
- * @Last Modified time: 2018-09-09 14:14:19
+ * @Last Modified time: 2018-09-09 20:35:47
  */
 
 /* ===================================== */
@@ -10,20 +10,27 @@
 /* ===================================== */
 
 /* Platform imports */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 /* ===================================== */
 /*              DECORATOR                */
 /* ===================================== */
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-not-found',
+  templateUrl: './not-found.component.html',
+  styleUrls: ['./not-found.component.css']
 })
 
 /* ===================================== */
-/*                EXPORT                 */
+/*                CLASS                  */
 /* ===================================== */
 
-export class AppComponent {}
+export class NotFoundComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

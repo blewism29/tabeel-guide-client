@@ -1,0 +1,71 @@
+/*
+ * @Author: Benjamin Lewis 
+ * @Date: 2018-09-09 12:01:42 
+ * @Last Modified by: Benjamin Lewis
+ * @Last Modified time: 2018-09-09 20:46:33
+ */
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.nav-sub-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-right-container {
+  padding-right: 35px;
+}
+
+.back-button-container {
+  width: 29px;
+  margin-left: -5px;
+}
+
+.back-button {
+  background-color: transparent;
+
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+
+  padding: 6px;
+
+  color: #FFFFFF;
+
+  display: none;
+}
+
+.enabled {
+  display: block;
+}
+
+.back-button :active {
+  background-color: white;
+  
+  border-radius: 30px;
+  
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+
+  color: #000000;
+}
+
+.back-button :focus {
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.tabeel-logo {
+  padding: 5px 15px;
+}
+
+.nav-divider {
+  padding-top: 3px;
+}

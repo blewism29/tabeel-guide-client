@@ -1,0 +1,25 @@
+/*
+ * @Author: Benjamin Lewis 
+ * @Date: 2018-09-09 14:12:02 
+ * @Last Modified by: Benjamin Lewis
+ * @Last Modified time: 2018-09-09 20:24:05
+ */
+
+ .nav-item-container {
+   padding: 5px 10px;
+   display: block;
+ }
+
+ .nav-item-container > a {
+  padding: 14px 0px;
+  
+  text-decoration: none;
+  color: #FFFFFF;
+
+  align-content: center;
+  width: 100%;
+ }
+
+ .active {
+   border-bottom: solid 4px #FFFFFF;
+ }
