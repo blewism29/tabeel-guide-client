@@ -1,22 +1,23 @@
-<mat-toolbar>
-  <div class="nav-container">
-    
-    <div class="nav-sub-container">
-      <div class="back-button-container">
-        <button class="back-button enabled" [ngClass]="{ enabled: backEnabled }">
-          <i class="material-icons"> arrow_back </i>
-        </button>
-      </div>
+<div class="nav-mat-toolbar-container">
+  <mat-toolbar>
+    <div class="nav-container">
       
-      <div class="tabeel-logo">
-        <span> Tabeel </span>
+      <div class="nav-sub-container">
+        <div class="back-button-container">
+          <button class="back-button enabled" [ngClass]="{ enabled: backEnabled }">
+            <i class="material-icons"> arrow_back </i>
+          </button>
+        </div>
+        
+        <div class="tabeel-logo">
+          <span> Tabeel </span>
+        </div>
+      </div>
+
+      <div class="nav-sub-container nav-right-container">
+        <nav-bar-item name="Channels" url="/channels"></nav-bar-item>
+        <nav-bar-item name="About" url="/about"></nav-bar-item>
       </div>
     </div>
-
-    <div class="nav-sub-container nav-right-container">
-      <nav-bar-item name="Channels" url="/channels"></nav-bar-item>
-      <nav-bar-item name="About" url="/about"></nav-bar-item>
-    </div>
-    
-  </div>
-</mat-toolbar>
+  </mat-toolbar>
+</div>

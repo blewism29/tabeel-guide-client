@@ -2,7 +2,7 @@
  * @Author: Benjamin Lewis 
  * @Date: 2018-09-08 22:15:00 
  * @Last Modified by: Benjamin Lewis
- * @Last Modified time: 2018-09-09 20:34:23
+ * @Last Modified time: 2018-09-15 23:49:26
  */
 
 /* ===================================== */
@@ -20,7 +20,7 @@ import { MatToolbarModule } from '@angular/material';
 /* System imports */
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './Router';
-import { NavbarComponent, NavbarItemComponent } from './Layout';
+import { NavbarComponent, NavbarItemComponent, AppFooterComponent } from './Layout';
 
 /* ===================================== */
 /*              DECORATOR                */
@@ -30,7 +30,8 @@ import { NavbarComponent, NavbarItemComponent } from './Layout';
   declarations: [
     AppComponent,
     NavbarComponent,
-    NavbarItemComponent
+    NavbarItemComponent,
+    AppFooterComponent
   ],
   imports: [
     BrowserModule,

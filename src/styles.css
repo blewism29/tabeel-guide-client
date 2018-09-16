@@ -5,8 +5,6 @@
  * @Last Modified time: 2018-09-09 20:50:17
  */
 
-@import '~@angular/material/prebuilt-themes/purple-green.css'; /* Material theme */
-
 html, body { 
   height: 100%; 
 }

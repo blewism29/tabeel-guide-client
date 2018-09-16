@@ -2,7 +2,7 @@
  * @Author: Benjamin Lewis 
  * @Date: 2018-09-09 14:16:04 
  * @Last Modified by: Benjamin Lewis
- * @Last Modified time: 2018-09-09 20:49:10
+ * @Last Modified time: 2018-09-10 22:34:56
  */
 
 /* ===================================== */
@@ -11,7 +11,6 @@
 
 /* Platform imports */
 import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
 
 /* ===================================== */
 /*              DECORATOR                */
@@ -33,7 +32,7 @@ export class NavbarItemComponent implements OnInit {
   @Input() url : string;
   @Input() active : boolean;
 
-  constructor(router : Router) { 
+  constructor() { 
   }
 
   ngOnInit() {

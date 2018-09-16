@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  /* random image api url */
+  randomImageApiUrl: 'https://picsum.photos/500/300',
+
+  /* random quote api url */
+  randomQuoteApiUrl: 'https://opinionated-quotes-api.gigalixirapp.com/v1/quotes'
 };
 
 /*

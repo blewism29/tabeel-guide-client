@@ -1,8 +1,43 @@
 /*
  * @Author: Benjamin Lewis 
  * @Date: 2018-09-09 20:49:25 
- * @Last Modified by:   Benjamin Lewis 
- * @Last Modified time: 2018-09-09 20:49:25 
+ * @Last Modified by: Benjamin Lewis
+ * @Last Modified time: 2018-09-14 12:17:50
  */
 
- 
+.not-found-container {
+  height: 100%;
+  padding: 30px 50px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.not-found-texts-container {
+  margin: auto;
+}
+
+.not-found-texts-container > h1, p {
+  text-align: center;
+}
+
+.not-found-texts-container > p {
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.not-found-texts-container > p > a {
+  
+  text-decoration: none;
+  color: #000000;
+
+  padding: 0px 0px 0px 4px;
+
+  border-bottom: 3px solid  #000000;
+  border-radius: 4px;
+}
+
+.random-quote-container {
+  margin: auto;
+  padding: 5em 0;
+}

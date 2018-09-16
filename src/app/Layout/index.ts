@@ -7,3 +7,4 @@
 
  export { NavbarComponent } from './navbar/navbar.component';
  export { NavbarItemComponent } from './navbar-item/navbar-item.component';
+ export { AppFooterComponent } from './app-footer/app-footer.component';

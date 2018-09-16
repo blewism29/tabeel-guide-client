@@ -2,7 +2,7 @@
  * @Author: Benjamin Lewis 
  * @Date: 2018-09-09 20:35:03 
  * @Last Modified by: Benjamin Lewis
- * @Last Modified time: 2018-09-09 20:35:47
+ * @Last Modified time: 2018-09-10 22:07:52
  */
 
 /* ===================================== */
@@ -10,7 +10,8 @@
 /* ===================================== */
 
 /* Platform imports */
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { RandomQuoteService, RandomImageService } from '../Services';
 
 /* ===================================== */
 /*              DECORATOR                */
@@ -28,9 +29,26 @@ import { Component, OnInit } from '@angular/core';
 
 export class NotFoundComponent implements OnInit {
 
-  constructor() { }
+  randomImage: string;
+  randomQuote: string;
 
-  ngOnInit() {
+  constructor(private randomQuoteService: RandomQuoteService, private randomImageService: RandomImageService, private cdRef: ChangeDetectorRef) { 
   }
 
+
+
+  ngOnInit() {
+    this.randomQuoteService.getRandomQuote().subscribe(
+      (data) => console.log(data)
+    );
+
+    this.randomImage = '';
+
+    this.randomImageService.getRandomImage().subscribe(
+      (data) => this.randomImage = data,
+      (error) => console.error(error)
+    );
+
+    this.cdRef.detectChanges();
+  }
 }

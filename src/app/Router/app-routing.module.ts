@@ -2,7 +2,7 @@
  * @Author: Benjamin Lewis 
  * @Date: 2018-09-08 21:29:06 
  * @Last Modified by: Benjamin Lewis
- * @Last Modified time: 2018-09-09 20:38:04
+ * @Last Modified time: 2018-09-15 23:55:08
  */
 
 /* ===================================== */
@@ -12,12 +12,15 @@
 /* Platform imports */
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 /* Material */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-/* System components import */
-import { NotFoundComponent } from '../NotFound';
+/* App imports */
+import { NotFoundComponent, RandomImageService, RandomQuoteService } from '../NotFound';
+import { ChannelsComponent } from '../Channels';
+import { AboutComponent } from '../About';
 
 
 /* ===================================== */
@@ -26,10 +29,14 @@ import { NotFoundComponent } from '../NotFound';
 const routes: Routes = [
   {
     path: 'channels',
-    component: NotFoundComponent,
-    data: { title: 'Channel List' }
+    component: ChannelsComponent
   },
-  { path: '',
+  { 
+    path: 'about',
+    component: AboutComponent
+  },
+  { 
+    path: '',
     redirectTo: '/channels',
     pathMatch: 'full'
   },
@@ -45,13 +52,20 @@ const routes: Routes = [
 @NgModule({
   imports: [
     BrowserAnimationsModule,
+    HttpModule,
     RouterModule.forRoot(routes)
   ],
   declarations: [
-    NotFoundComponent
+    NotFoundComponent,
+    ChannelsComponent,
+    AboutComponent
   ],
   exports: [
     RouterModule
+  ],
+  providers: [
+    RandomImageService,
+    RandomQuoteService
   ]
 })
 
